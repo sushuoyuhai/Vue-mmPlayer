@@ -13,7 +13,7 @@
 <script>
 import { mapMutations, mapActions } from 'vuex'
 import { getPlaylistDetail } from 'api'
-import { MMPLAYER_CONFIG, VERSION } from '@/config'
+import {beli_CONFIG, VERSION } from '@/config'
 import MmHeader from 'components/mm-header/mm-header'
 import MmDialog from 'base/mm-dialog/mm-dialog'
 import { getVersion, setVersion } from '@/utils/storage'

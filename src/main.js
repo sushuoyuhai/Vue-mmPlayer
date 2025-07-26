@@ -39,16 +39,16 @@ router.beforeEach((to, from, next) => {
     next()
   } else {
     document.title =
-      (to.meta.title && `${to.meta.title} - mmPlayer在线音乐播放器`) || 'mmPlayer在线音乐播放器'
+      (to.meta.title && `${to.meta.title} -beli在线音乐播放器`) || 'mmPlayer在线音乐播放器'
     next()
   }
 })
 
 // 版权信息
-window.mmPlayer = window.mmplayer = `欢迎使用 mmPlayer!
+window.mmPlayer = window.mmplayer = `欢迎使用beli!
 当前版本为：V${VERSION}
-作者：茂茂
-Github：https://github.com/maomao1996/Vue-mmPlayer
+作者：别离
+主页：https://hub.sihoyo.cn/NutssssIndex/index.html
 歌曲来源于网易云音乐 (https://music.163.com)`
 // eslint-disable-next-line no-console
 console.info(`%c${window.mmplayer}`, `color:blue`)

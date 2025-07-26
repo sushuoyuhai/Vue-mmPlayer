@@ -1,6 +1,6 @@
-# mmPlayer
+#beli
 
-> mmPlayer 是由茂茂开源的一款在线音乐播放器，具有音乐搜索、播放、歌词显示、播放历史、查看歌曲评论、网易云用户歌单播放同步等功能
+>beli 是由别离开源的一款在线音乐播放器，具有音乐搜索、播放、歌词显示、播放历史、查看歌曲评论、网易云用户歌单播放同步等功能
 
 模仿 QQ 音乐网页版界面，采用 `flexbox` 和 `position` 布局；<br />
 mmPlayer 虽然是响应式，但主要以 PC 端为主，移动端只做相应适配；<br />
@@ -9,7 +9,7 @@ mmPlayer 虽然是响应式，但主要以 PC 端为主，移动端只做相应�
 - [在线演示地址](https://netease-music.fe-mm.com/)
 - [React 移动端版本（高仿网易云音乐）](https://github.com/maomao1996/react-music)
 - [交流 QQ 群：529940193](http://shang.qq.com/wpa/qunwpa?idkey=f8be1b627a89108ccfda9308720d2a4d0eb3306f253c5d3e8d58452e20b91129) 本群不解答部署相关问题，如有部署问题请看[关于项目线上部署](#关于项目线上部署)
-- 本播放器由 **[茂茂](https://github.com/maomao1996) 开发**，您可以随意修改、使用、转载。但**使用或转载时请务必保留出处（控制台的注释信息）**！！！
+- 本播放器由 **[别离](https://github.com/maomao1996) 开发**，您可以随意修改、使用、转载。但**使用或转载时请务必保留出处（控制台的注释信息）**！！！
 
 ## 免责声明
 
@@ -34,13 +34,13 @@ mmPlayer 虽然是响应式，但主要以 PC 端为主，移动端只做相应�
 node -v
 ```
 
-### mmPlayer
+###beli
 
 ```sh
-# 下载 mmPlayer
+# 下载beli
 git clone https://github.com/maomao1996/Vue-mmPlayer
 
-# 进入 mmPlayer 播放器目录
+# 进入beli 播放器目录
 cd Vue-mmPlayer
 
 # 安装依赖 推荐使用 pnpm
@@ -48,7 +48,7 @@ pnpm install
 # 或者
 npm install
 
-# 本地运行 mmPlayer
+# 本地运行beli
 npm run serve
 
 # 编译打包
@@ -75,7 +75,7 @@ node app.js
 
 ### 注意点
 
-**运行 mmPlayer 后无法获取音乐请检查后台 `api` 服务是否启动(即控制台请求报 404)**<br />
+**运行beli 后无法获取音乐请检查后台 `api` 服务是否启动(即控制台请求报 404)**<br />
 **线上部署不是直接将整个项目丢到服务器，再去运行 `npm run serve` 命令**<br />
 **项目打包前 `VUE_APP_BASE_API_URL` 必须改后台 `api` 服务地址为线上地址，不能是本地地址**
 
@@ -93,7 +93,7 @@ node app.js
   - 先将 `.env` 文件的 `VUE_APP_BASE_API_URL` 修改成上一步启动的后台 `api` 服务地址(服务器 `ip` + 端口号或者你绑定的域名)
   - 然后先在本地运行 `npm run build` 命令，会打包在生成一个 `dist` 文件
   - 最后将打包的 `dist` 文件上传到你的网站服务器目录即可
-- 其他：[在宝塔面板部署 mmPlayer](https://github.com/maomao1996/Blog/issues/1)（不喜欢写文，可能有点烂不要介意哈）
+- 其他：[在宝塔面板部署beli](https://github.com/maomao1996/Blog/issues/1)（不喜欢写文，可能有点烂不要介意哈）
 - 最后：本人已和谷歌、百度达成合作了，如果还有啥不懂的，以后可以直接谷歌、百度
 
 #### Vercel 部署
@@ -176,7 +176,7 @@ node app.js
 │   │   │   └── topList.vue                         // 排行榜页面
 │   │   ├── userList
 │   │   │   └── userList.vue                        // 我的歌单
-│   │   ├── mmPlayer.js                             // 播放器事相关件绑定
+│   │   ├──beli.js                             // 播放器事相关件绑定
 │   │   └── music.vue                               // 播放器主页面
 │   ├── router
 │   │   └── index.js                                // 路由配置
@@ -188,7 +188,7 @@ node app.js
 │   │   ├── mutations.js                            // 配置 mutations
 │   │   └── state.js                                // 配置 state
 │   ├── styles                                      // 样式文件目录
-│   │   ├── index.less                              // mmPlayer 相关基础样式
+│   │   ├── index.less                              //beli 相关基础样式
 │   │   ├── mixin.less                              // 样式混合
 │   │   ├── reset.less                              // 样式重置
 │   │   └── var.less                                // 样式变量（字体大小、字体颜色、背景颜色）
@@ -438,7 +438,7 @@ PC 端界面自我感觉还行， 就是移动端界面总觉得怪怪的，奈�
 - 新增随机播放、列表循环、单曲循环、顺序播放功能
 - 新增清空正在播放列表功能
 - 新增清空列表的提示
-- 新增版权信息（控制台输入 mmPlayer ）
+- 新增版权信息（控制台输入beli ）
 - 增加背景滤镜的模糊度和透明度
 - 增加浏览器访问的限制（兼容主流浏览器，最好全是用 chrome，哈哈）
 - 整合 `music-list` 组件

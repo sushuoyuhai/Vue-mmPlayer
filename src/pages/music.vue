@@ -69,9 +69,9 @@
 
 <script>
 import { getLyric } from 'api'
-import mmPlayerMusic from './mmPlayer'
+importbeliMusic from './mmPlayer'
 import { randomSortArray, parseLyric, format, silencePromise } from '@/utils/util'
-import { PLAY_MODE, MMPLAYER_CONFIG } from '@/config'
+import { PLAY_MODE,beli_CONFIG } from '@/config'
 import { getVolume, setVolume } from '@/utils/storage'
 import { mapGetters, mapMutations, mapActions } from 'vuex'
 
@@ -169,7 +169,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      mmPlayerMusic.initAudio(this)
+     beliMusic.initAudio(this)
       this.initKeyDown()
       this.volumeChange(this.volume)
     })

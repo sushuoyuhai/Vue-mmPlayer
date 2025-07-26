@@ -1,4 +1,4 @@
-import { MMPLAYER_CONFIG } from '@/config'
+import {beli_CONFIG } from '@/config'
 
 const STORAGE = window.localStorage
 const storage = {
@@ -75,7 +75,7 @@ export function clearHistoryList() {
 const MODE_KEY = '__mmPlayer_mode__'
 // 获取播放模式
 export function getMode() {
-  return Number(storage.get(MODE_KEY, MMPLAYER_CONFIG.PLAY_MODE))
+  return Number(storage.get(MODE_KEY,beli_CONFIG.PLAY_MODE))
 }
 // 修改播放模式
 export function setMode(mode) {
@@ -121,7 +121,7 @@ export function setVersion(version) {
 const VOLUME_KEY = '__mmPlayer_volume__'
 // 获取音量
 export function getVolume() {
-  const volume = storage.get(VOLUME_KEY, MMPLAYER_CONFIG.VOLUME)
+  const volume = storage.get(VOLUME_KEY,beli_CONFIG.VOLUME)
   return Number(volume)
 }
 // 修改音量

@@ -15,7 +15,7 @@
         <dd>
           <a class="hover" target="_blank" href="https://github.com/maomao1996">
             <mm-icon type="github" :size="14" />
-            &nbsp;茂茂
+            &nbsp;别离
           </a>
         </dd>
       </template>
